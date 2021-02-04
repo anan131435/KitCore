@@ -1,4 +1,4 @@
-framework module KitCore {
+module KitCore {
   umbrella header "KitCore-umbrella.h"
 
   export *

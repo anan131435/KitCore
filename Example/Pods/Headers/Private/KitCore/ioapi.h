@@ -1,0 +1,1 @@
+../../../../../KitCore/Classes/ZipArchive/3rdparty/minizip/ioapi.h

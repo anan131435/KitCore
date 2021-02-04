@@ -1,4 +1,4 @@
-framework module Pods_KitCore_Example {
+module Pods_KitCore_Example {
   umbrella header "Pods-KitCore_Example-umbrella.h"
 
   export *
