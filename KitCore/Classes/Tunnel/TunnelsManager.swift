@@ -505,7 +505,7 @@ public class TunnelContainer: NSObject {
                     self.refreshStatus()
                 }
                 self.activationTimer = activationTimer
-                RunLoop.main.add(activationTimer, forMode: RunLoopMode.commonModes)
+                RunLoop.main.add(activationTimer, forMode: .common)
             }
         }
     }
