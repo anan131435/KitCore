@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KitCore'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'core compent for kit development'
 
 # This description is used to generate tags and improve search results.
