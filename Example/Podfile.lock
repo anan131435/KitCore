@@ -1,5 +1,5 @@
 PODS:
-  - KitCore (0.1.0)
+  - KitCore (1.0)
 
 DEPENDENCIES:
   - KitCore (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KitCore: 82c9922081b64dffd415ef528405b07a3066aedc
+  KitCore: 1b26bd750178a88ac32af5800b568a7ba0ee8198
 
 PODFILE CHECKSUM: c21e95417134b9e47d2cb070a92769567d11e6fa
 

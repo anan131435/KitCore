@@ -1,7 +1,7 @@
 {
   "name": "KitCore",
-  "version": "0.1.0",
-  "summary": "A short description of KitCore.",
+  "version": "1.0",
+  "summary": "core compent for kit development",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/anan131435/KitCore",
   "license": {
@@ -13,10 +13,12 @@
   },
   "source": {
     "git": "https://github.com/anan131435/KitCore.git",
-    "tag": "0.1.0"
+    "tag": "1.0"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "12.0"
   },
-  "source_files": "KitCore/Classes/**/*"
+  "source_files": "KitCore/Classes/**/*",
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }
