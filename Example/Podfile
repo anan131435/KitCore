@@ -1,6 +1,7 @@
 use_frameworks!
-
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '12.0'
+use_modular_headers!
 
 target 'KitCore_Example' do
   pod 'KitCore', :path => '../'
