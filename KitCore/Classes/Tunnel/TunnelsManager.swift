@@ -331,11 +331,11 @@ public class TunnelsManager {
         }
     }
 
-    func numberOfTunnels() -> Int {
+   public func numberOfTunnels() -> Int {
         return tunnels.count
     }
 
-    func tunnel(at index: Int) -> TunnelContainer {
+    public func tunnel(at index: Int) -> TunnelContainer {
         return tunnels[index]
     }
 
@@ -343,11 +343,11 @@ public class TunnelsManager {
         return try tunnels.map(transform)
     }
 
-    func index(of tunnel: TunnelContainer) -> Int? {
+    public func index(of tunnel: TunnelContainer) -> Int? {
         return tunnels.firstIndex(of: tunnel)
     }
 
-    func tunnel(named tunnelName: String) -> TunnelContainer? {
+    public func tunnel(named tunnelName: String) -> TunnelContainer? {
         return tunnels.first { $0.name == tunnelName }
     }
 
@@ -362,7 +362,7 @@ public class TunnelsManager {
         return tunnels.first { $0.status != .inactive }
     }
 
-    func startActivation(of tunnel: TunnelContainer) {
+    public func startActivation(of tunnel: TunnelContainer) {
         guard tunnels.contains(tunnel) else { return } // Ensure it's not deleted
         guard tunnel.status == .inactive else {
             activationDelegate?.tunnelActivationAttemptFailed(tunnel: tunnel, error: .tunnelIsNotInactive)
@@ -394,7 +394,7 @@ public class TunnelsManager {
         #endif
     }
 
-    func startDeactivation(of tunnel: TunnelContainer) {
+    public func startDeactivation(of tunnel: TunnelContainer) {
         tunnel.isAttemptingActivation = false
         guard tunnel.status != .inactive && tunnel.status != .deactivating else { return }
         #if targetEnvironment(simulator)

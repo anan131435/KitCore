@@ -11,7 +11,7 @@ public enum TunnelsManagerError: WireGuardAppError {
     case systemErrorOnModifyTunnel(systemError: Error)
     case systemErrorOnRemoveTunnel(systemError: Error)
 
-    var alertText: AlertText {
+   public var alertText: AlertText {
         switch self {
         case .tunnelNameEmpty:
             return (tr("alertTunnelNameEmptyTitle"), tr("alertTunnelNameEmptyMessage"))
